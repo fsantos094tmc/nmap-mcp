@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nmaprun scanner="nmap" args="nmap -oX - -sn 192.168.1.0/24" start="1700000000" startstr="Mon Nov  1 00:00:00 2026" version="7.95" xmloutputversion="1.05">
+<host starttime="1700000000" endtime="1700000001">
+<status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.1" addrtype="ipv4"/>
+<address addr="AA:BB:CC:00:11:22" addrtype="mac" vendor="Netgear"/>
+<hostnames><hostname name="router.lan" type="PTR"/></hostnames>
+</host>
+<host starttime="1700000000" endtime="1700000001">
+<status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.42" addrtype="ipv4"/>
+<address addr="DE:AD:BE:EF:00:01" addrtype="mac" vendor="Raspberry Pi Foundation"/>
+<hostnames></hostnames>
+</host>
+<host starttime="1700000000" endtime="1700000001">
+<status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="192.168.1.99" addrtype="ipv4"/>
+</host>
+<runstats>
+<finished time="1700000002" timestr="Mon Nov  1 00:00:02 2026" elapsed="2.00" summary="Nmap done" exit="success"/>
+<hosts up="2" down="1" total="3"/>
+</runstats>
+</nmaprun>

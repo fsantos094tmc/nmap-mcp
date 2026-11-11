@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nmaprun scanner="nmap" args="nmap -oX - -O 192.168.1.10" start="1700000000" startstr="Mon Nov  1 00:00:00 2026" version="7.95" xmloutputversion="1.05">
+<host starttime="1700000000" endtime="1700000005">
+<status state="up" reason="syn-ack" reason_ttl="64"/>
+<address addr="192.168.1.10" addrtype="ipv4"/>
+<os>
+<osmatch name="Linux 6.1 - 6.8" accuracy="95" line="12345">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="6.X" accuracy="95"/>
+</osmatch>
+<osmatch name="Linux 5.10 - 5.15" accuracy="90" line="54321">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="90"/>
+</osmatch>
+</os>
+<uptime seconds="98765" lastboot="Sun Oct 31 00:00:00 2026"/>
+<distance value="1"/>
+</host>
+<runstats>
+<finished time="1700000005" timestr="Mon Nov  1 00:00:05 2026" elapsed="5.00" summary="Nmap done" exit="success"/>
+<hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

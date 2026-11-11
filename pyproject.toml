@@ -1,0 +1,33 @@
+[project]
+name = "nmap-mcp"
+version = "0.1.0"
+description = "Scoped Nmap MCP server: AI-driven network scanning restricted to networks you are authorized to test."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.2.0,<2",
+    "pydantic>=2.6",
+]
+
+[project.scripts]
+nmap-mcp = "nmap_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nmap_mcp"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "live: requires a real nmap binary and network access (opt-in)",
+]
